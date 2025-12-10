@@ -1,0 +1,21 @@
+.venv
+extras
+node_modules
+dist
+.env
+.DS_Store
+npm-debug.log
+yarn-error.log
+.vscode
+.idea
+
+# MacOS files
+*.DS_Store      
+
+# Logs
+logs
+*.log
+pids
+*.pid
+*.seed
+*.pid.lock
