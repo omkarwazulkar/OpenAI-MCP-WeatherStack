@@ -21,15 +21,11 @@ Weather data is fetched in real-time using the **wttr.in API**.
 | Frontend | React • Vite • Tailwind |
 
 # Architecture Flow
-
-```md
-```mermaid
 graph LR
     A((React UI<br/>:5173)) --> B[(Express API<br/>:3001)]
     B --> C[[OpenAI Agent Runtime<br/>TypeScript SDK]]
     C --> D[(MCP Weather Server<br/>Python :8000)]
     D --> E[(wttr.in API)]
-```
 
 # 📂 Project Structure
 
@@ -41,7 +37,6 @@ WeatherFullStackMCP/
 ├── .env                        # OpenAI API key goes here
 ├── .venv/                      # Python virtual environment
 └── frontend/                   # Vite + React + Tailwind UI
-
 
 ---
 
@@ -72,8 +67,7 @@ source .venv/bin/activate
 pip install fastmcp requests
 ```
 
-- Run MCP Server
-Run Command: 
+- Run MCP Server Command
 ```bash
 python mcp_server.py
 ```
@@ -91,16 +85,16 @@ npm install dotenv
 ```bash
 touch .env
 ```
-Add:
+- Add:
 ```bash
 OPENAI_API_KEY=your_openai_api_key_here
 ```
 
-- Run Express Server
-Run Command: 
+- Run Express Server Command
 ```bash
 npx ts-node express_server.ts
 ```
+
 Express Server Running : http://localhost:3001/ask
 
 ### Step 3: React Frontend
@@ -111,11 +105,11 @@ cd frontend
 npm install
 ```
 
-- Run React
-Run Command: 
+- Run React Command 
 ```bash
 npm run dev
 ```
+
 Frontend Running : http://localhost:5173
 
 # 💬 Usage
