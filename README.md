@@ -64,7 +64,7 @@ cd OpenAI-MCP-WeatherStack
 
 - Setup Python MCP Server
 ```bash
-python3 -m venv .venv
+python3.11 -m venv .venv
 source .venv/bin/activate
 pip install fastmcp requests
 ```
@@ -75,7 +75,7 @@ python mcp_server.py
 ```
 MCP Server Running : http://localhost:8000/mcp
 
-### Step 2: Node Backend
+### Step 2: Node Backend (Open New Terminal)
 
 - Setup Node Backend
 ```bash
@@ -99,7 +99,7 @@ npx ts-node express_server.ts
 
 Express Server Running : http://localhost:3001/ask
 
-### Step 3: React Frontend
+### Step 3: React Frontend (Open New Terminal)
 
 - Setup Frontend UI
 ```bash
