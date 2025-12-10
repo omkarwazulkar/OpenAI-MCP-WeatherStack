@@ -54,47 +54,68 @@ WeatherFullStackMCP/
 
 ---
 
-## 🧪 Setup Instructions
+# 🧪 Setup Instructions
 
-### 1. Clone Project
+## 1. Clone Project
 
 ```bash
 git clone https://github.com/<your-user>/WeatherFullStackMCP.git
 cd WeatherFullStackMCP
-
+```
 
 ### Step 1: MCP Python Server
 
 2. Setup Python MCP Server
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install fastmcp requests
+```
 
 3. Run MCP Server
-Run Command: python mcp_server.py
+Run Command: 
+```bash
+python mcp_server.py
+```
 MCP Server Running : http://localhost:8000/mcp
 
 ### Step 2: Node Backend
 
 4. Setup Node Backend
+```bash
 npm install
 npm install dotenv
+```
 
 5. Create .env (Root)
+```bash
+touch .env
+```
+Add:
+```bash
 OPENAI_API_KEY=your_openai_api_key_here
+```
 
 6. Run Express Server
-Run Command: npx ts-node express_server.ts
+Run Command: 
+```bash
+npx ts-node express_server.ts
+```
 Express Server Running : http://localhost:3001/ask
 
 ### Step 3: React Frontend
 
 7. Setup Frontend UI
+```bash
 cd frontend
 npm install
+```
 
 8. Run React
-Run Command: npm run dev
+Run Command: 
+```bash
+npm run dev
+```
 Frontend Running : http://localhost:5173
 
 💬 Usage
