@@ -21,18 +21,12 @@ Weather data is fetched in real-time using the **wttr.in API**.
 | Frontend | React • Vite • Tailwind |
 
 # Architecture Flow
-graph LR
-    A((React UI<br/>:5173)) --> B[(Express API<br/>:3001)]
-    B --> C[[OpenAI Agent Runtime<br/>TypeScript SDK]]
-    C --> D[(MCP Weather Server<br/>Python :8000)]
-    D --> E[(wttr.in API)]
-
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+graph TD
+    A((React UI :5173)) --> B[(Express API :3001)]
+    B --> C[[OpenAI Agent Runtime - TypeScript SDK]]
+    C --> D[(MCP Weather Server :8000 Python)]
+    D --> E[(wttr.in API)]
 ```
 
 # 📂 Project Structure
