@@ -128,7 +128,7 @@ What is the weather in New York?
 - Click "Ask".
 
 - Response:
-![alt text](image.png)
+![alt text](image-1.png)
 
 - Response Path: React → Express → Agent → MCP → Weather API → UI
 
