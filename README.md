@@ -1,4 +1,4 @@
-# 📌 WeatherFullStackMCP
+# 📌 OpenAI-MCP-WeatherStack
 
 A **full-stack Weather AI Agent** built using:
 
@@ -56,7 +56,7 @@ WeatherFullStackMCP
 ## Clone Project
 
 ```bash
-git clone https://github.com/<your-user>/WeatherFullStackMCP.git
+git clone https://github.com/omkarwazulkar/OpenAI-MCP-WeatherStack.git
 cd WeatherFullStackMCP
 ```
 
