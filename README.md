@@ -65,14 +65,14 @@ cd WeatherFullStackMCP
 
 ### Step 1: MCP Python Server
 
-1. Setup Python MCP Server
+- Setup Python MCP Server
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install fastmcp requests
 ```
 
-2. Run MCP Server
+- Run MCP Server
 Run Command: 
 ```bash
 python mcp_server.py
@@ -81,13 +81,13 @@ MCP Server Running : http://localhost:8000/mcp
 
 ### Step 2: Node Backend
 
-1. Setup Node Backend
+- Setup Node Backend
 ```bash
 npm install
 npm install dotenv
 ```
 
-2. Create .env (Root)
+- Create .env (Root)
 ```bash
 touch .env
 ```
@@ -96,7 +96,7 @@ Add:
 OPENAI_API_KEY=your_openai_api_key_here
 ```
 
-3. Run Express Server
+- Run Express Server
 Run Command: 
 ```bash
 npx ts-node express_server.ts
@@ -105,38 +105,46 @@ Express Server Running : http://localhost:3001/ask
 
 ### Step 3: React Frontend
 
-1. Setup Frontend UI
+- Setup Frontend UI
 ```bash
 cd frontend
 npm install
 ```
 
-2. Run React
+- Run React
 Run Command: 
 ```bash
 npm run dev
 ```
 Frontend Running : http://localhost:5173
 
-💬 Usage
+# 💬 Usage
 
-Open http://localhost:5173 in your browser.
-Enter a message like: What is the weather in New York?
-Response:
+- Open http://localhost:5173 in your browser.
+
+- Enter a message like: 
+```bash
+What is the weather in New York?
+```
+
+- Click "Ask".
+
+- Response:
 ![alt text](image.png)
-Response Path: React → Express → Agent → MCP → Weather API → UI
 
-⭐ Features
+- Response Path: React → Express → Agent → MCP → Weather API → UI
 
-Real Weather Retrieval via MCP
-Clean Tailwind UI
-.env Key With dotenv
-Modular Component Structure
+# ⭐ Features
 
-🤝 Contribute
+- Real Weather Retrieval via MCP
+- Clean Tailwind UI
+- .env Key With dotenv
+- Modular Component Structure
 
-Pull requests welcome.
-If you like this project, ⭐ star the repo!
+# 🤝 Contribute
+
+- Pull Requests Welcome.
+- If you like this project, ⭐ star the repo!
 
 
 
