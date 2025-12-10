@@ -29,25 +29,17 @@ graph TD
     D --> E[(wttr.in API)]
 ```
 
-# 📂 Project Structure
-
-WeatherFullStackMCP
- * [mcp_server.py](./mcp_server.py)              # MCP Weather tool server (Python)
- * [express_server.ts](./express_server.ts)      # Express backend using agent + MCP tools
- * [package.json](./package.json)
- * [tsconfig.json](./tsconfig.json)
- * [.env](./.env)                                # OpenAI API key
- * [.venv](./.venv)                              # Python virtual environment
- * [frontend](./frontend)                        # Vite + React + Tailwind UI
+# 📂 Final Project Structure
+![alt text](image.png)
 
 ---
 
-# 🔑 Requirements
+# 🔑 Requirements (at current stage)
 
-- Python **3.11+**
-- Node **18+**
-- npm latest
-- OpenAI API Key
+- Python **3.11**
+- Node **22.14.0**
+- npm **10.9.2**
+- OpenAI API Key **sk-proj-ABCD1234**
 
 ---
 
