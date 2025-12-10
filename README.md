@@ -20,7 +20,7 @@ Weather data is fetched in real-time using the **wttr.in API**.
 | API Gateway | Express Server |
 | Frontend | React • Vite • Tailwind |
 
-# Architecture Flow
+# 🏗 Architecture Flow
 ```mermaid
 graph TD
     A((React UI :5173)) --> B[(Express API :3001)]
@@ -31,14 +31,14 @@ graph TD
 
 # 📂 Project Structure
 
-WeatherFullStackMCP/
-├── mcp_server.py               # MCP Weather tool server (Python)
-├── express_server.ts           # Express backend that calls agent + MCP tools
-├── package.json
-├── tsconfig.json
-├── .env                        # OpenAI API key goes here
-├── .venv/                      # Python virtual environment
-└── frontend/                   # Vite + React + Tailwind UI
+WeatherFullStackMCP
+ * [mcp_server.py](./mcp_server.py)              # MCP Weather tool server (Python)
+ * [express_server.ts](./express_server.ts)      # Express backend using agent + MCP tools
+ * [package.json](./package.json)
+ * [tsconfig.json](./tsconfig.json)
+ * [.env](./.env)                                # OpenAI API key
+ * [.venv](./.venv)                              # Python virtual environment
+ * [frontend](./frontend)                        # Vite + React + Tailwind UI
 
 ---
 
