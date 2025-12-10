@@ -27,6 +27,14 @@ graph LR
     C --> D[(MCP Weather Server<br/>Python :8000)]
     D --> E[(wttr.in API)]
 
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 # 📂 Project Structure
 
 WeatherFullStackMCP/
