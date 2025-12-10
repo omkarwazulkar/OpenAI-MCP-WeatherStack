@@ -74,6 +74,7 @@ pip install fastmcp requests
 python mcp_server.py
 ```
 MCP Server Running : http://localhost:8000/mcp
+(Note: Selecting streamable-http in mcp.run(transport="streamable-http") gets the mcp server running locally at /mcp endpoint)
 
 ### Step 2: Node Backend (Open New Terminal)
 

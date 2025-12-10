@@ -32,4 +32,4 @@ app.post("/ask", async (req, res) => {
   res.json({ answer: result.finalOutput });
 });
 
-app.listen(3001, () => console.log("API running on http://localhost:3001"));
+app.listen(3001, () => console.log("Express API Running on http://localhost:3001"));
