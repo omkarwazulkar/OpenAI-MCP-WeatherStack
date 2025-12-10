@@ -29,9 +29,9 @@ graph LR
     B --> C[[OpenAI Agent Runtime<br/>TypeScript SDK]]
     C --> D[(MCP Weather Server<br/>Python :8000)]
     D --> E[(wttr.in API)]
+```
 
-
-📂 Project Structure
+### 📂 Project Structure
 
 WeatherFullStackMCP/
 ├── mcp_server.py               # MCP Weather tool server (Python)
