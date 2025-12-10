@@ -79,6 +79,7 @@ MCP Server Running : http://localhost:8000/mcp
 
 - Setup Node Backend
 ```bash
+cd OpenAI-MCP-WeatherStack
 npm install
 npm install dotenv
 ```
@@ -97,12 +98,13 @@ OPENAI_API_KEY=your_openai_api_key_here
 npx ts-node express_server.ts
 ```
 
-Express Server Running : http://localhost:3001/ask
+Express Server Running : http://localhost:3001/
 
 ### Step 3: React Frontend (Open New Terminal)
 
 - Setup Frontend UI
 ```bash
+cd OpenAI-MCP-WeatherStack
 cd frontend
 npm install
 ```
@@ -112,7 +114,7 @@ npm install
 npm run dev
 ```
 
-Frontend Running : http://localhost:5173
+Frontend Running : http://localhost:5173/
 
 # 💬 Usage
 
