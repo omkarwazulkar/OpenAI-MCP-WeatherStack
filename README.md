@@ -11,7 +11,7 @@ Weather data is fetched in real-time using the **wttr.in API**.
 
 ---
 
-## 🚀 Tech Stack
+# 🚀 Tech Stack
 
 | Layer | Tech |
 |---|---|
@@ -20,7 +20,7 @@ Weather data is fetched in real-time using the **wttr.in API**.
 | API Gateway | Express Server |
 | Frontend | React • Vite • Tailwind |
 
-### Architecture Flow
+# Architecture Flow
 
 ```md
 ```mermaid
@@ -31,7 +31,7 @@ graph LR
     D --> E[(wttr.in API)]
 ```
 
-### 📂 Project Structure
+# 📂 Project Structure
 
 WeatherFullStackMCP/
 ├── mcp_server.py               # MCP Weather tool server (Python)
@@ -45,7 +45,7 @@ WeatherFullStackMCP/
 
 ---
 
-## 🔑 Requirements
+# 🔑 Requirements
 
 - Python **3.11+**
 - Node **18+**
@@ -56,7 +56,7 @@ WeatherFullStackMCP/
 
 # 🧪 Setup Instructions
 
-## 1. Clone Project
+## Clone Project
 
 ```bash
 git clone https://github.com/<your-user>/WeatherFullStackMCP.git
@@ -65,14 +65,14 @@ cd WeatherFullStackMCP
 
 ### Step 1: MCP Python Server
 
-2. Setup Python MCP Server
+1. Setup Python MCP Server
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install fastmcp requests
 ```
 
-3. Run MCP Server
+2. Run MCP Server
 Run Command: 
 ```bash
 python mcp_server.py
@@ -81,13 +81,13 @@ MCP Server Running : http://localhost:8000/mcp
 
 ### Step 2: Node Backend
 
-4. Setup Node Backend
+1. Setup Node Backend
 ```bash
 npm install
 npm install dotenv
 ```
 
-5. Create .env (Root)
+2. Create .env (Root)
 ```bash
 touch .env
 ```
@@ -96,7 +96,7 @@ Add:
 OPENAI_API_KEY=your_openai_api_key_here
 ```
 
-6. Run Express Server
+3. Run Express Server
 Run Command: 
 ```bash
 npx ts-node express_server.ts
@@ -105,13 +105,13 @@ Express Server Running : http://localhost:3001/ask
 
 ### Step 3: React Frontend
 
-7. Setup Frontend UI
+1. Setup Frontend UI
 ```bash
 cd frontend
 npm install
 ```
 
-8. Run React
+2. Run React
 Run Command: 
 ```bash
 npm run dev
