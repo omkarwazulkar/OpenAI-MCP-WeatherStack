@@ -57,7 +57,7 @@ WeatherFullStackMCP
 
 ```bash
 git clone https://github.com/omkarwazulkar/OpenAI-MCP-WeatherStack.git
-cd WeatherFullStackMCP
+cd OpenAI-MCP-WeatherStack
 ```
 
 ### Step 1: MCP Python Server
