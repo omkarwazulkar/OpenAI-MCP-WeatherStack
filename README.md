@@ -1,20 +1,33 @@
-📌 WeatherFullStackMCP
+# 📌 WeatherFullStackMCP
 
-A full-stack Weather Agent powered by MCP (Model Context Protocol) + Node Express + React Vite UI.
-The pipeline interacts with a Python MCP server to fetch real-time weather using wttr.in API.
+A **full-stack Weather AI Agent** built using:
 
-🚀 Tech Stack
+- **OpenAI Agents SDK (TypeScript)** as the backend agent runner  
+- **Python MCP Server (FastMCP + Requests)** for weather tools  
+- **Node Express** to expose the agent to the frontend  
+- **React + Vite + Tailwind** as the UI client  
 
-Layer	                Tech
-MCP Tools	    Python (FastMCP, Requests)
-Backend Agent	Node + TypeScript + @openai/agents
-Frontend	    React + Vite + Tailwind
+Weather data is fetched in real-time using the **wttr.in API**.
 
-Flow
-React (5173)
-  → Express API (3001)
-      → Agent using @openai/agents
-          → MCP Python Weather Server (8000)
+---
+
+## 🚀 Tech Stack
+
+| Layer | Tech |
+|---|---|
+| MCP Tools | Python • FastMCP • Requests |
+| Backend Agent | Node • TypeScript • @openai/agents |
+| API Gateway | Express Server |
+| Frontend | React • Vite • Tailwind |
+
+### Architecture Flow
+```mermaid
+graph TD
+    A[React UI :5173] --> B[Express API :3001]
+    B --> C[Agent (@openai/agents)]
+    C --> D[MCP Python Server :8000]
+    D --> E[wttr.in Weather API]
+
 
 📂 Project Structure
 
@@ -27,18 +40,26 @@ WeatherFullStackMCP/
 ├── .venv/                      # Python virtual environment
 └── frontend/                   # Vite + React + Tailwind UI
 
-🔑 Requirements
 
-Python 3.11+
-Node 18+
-npm latest
-OpenAI API Key
+---
 
-🧪 Setup Instructions
+## 🔑 Requirements
 
-1. Clone Project
+- Python **3.11+**
+- Node **18+**
+- npm latest
+- OpenAI API Key
+
+---
+
+## 🧪 Setup Instructions
+
+### 1. Clone Project
+
+```bash
 git clone https://github.com/<your-user>/WeatherFullStackMCP.git
 cd WeatherFullStackMCP
+
 
 ### Step 1: MCP Python Server
 
